@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vietjet Air - Bay Thỏa Thích, Khám Phá Thế Giới (Demo Landing Page)</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+  <!-- Demo Notice Topbar -->
+  <div class="demo-top-bar">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div>
+        <i class="bi bi-info-circle-fill me-1 text-warning"></i>
+        <strong>Giao diện Mockup / Demo</strong> - Trang web phục vụ mục đích trình diễn giao diện người dùng (UI/UX).
+      </div>
+      <div class="d-none d-md-block">
+        <i class="bi bi-telephone-fill me-1"></i> Hotline hỗ trợ: <strong>1900 1886</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg vj-navbar" id="mainNavbar">
+      <div class="container">
+        <!-- Logo Vietjet -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#trang-chu">
+          <img src="images/vietjet-logo.jpg" alt="Vietjet Logo" class="brand-logo">
+          <span class="d-none d-sm-inline-block fw-bold text-dark fs-5 tracking-tight">Vietjet<span class="text-danger">Air</span></span>
+        </a>
+
+        <!-- Mobile Hamburger Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center py-2 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#trang-chu">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#thoi-tiet">Thời tiết</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chuyen-bay">Chuyến bay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#khuyen-mai">Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#uu-diem">Ưu điểm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lien-he">Liên hệ</a>
+            </li>
+          </ul>
+
+          <!-- CTA Button -->
+          <div class="d-flex justify-content-center">
+            <a href="#dat-ve" class="btn btn-vj-primary">
+              <i class="bi bi-ticket-perforated-fill"></i> Đặt vé
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="trang-chu">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Left Column: Headline & Content -->
+          <div class="col-lg-6">
+            <div class="hero-badge">
+              <i class="bi bi-stars"></i> Trải nghiệm chuyến bay thế hệ mới
+            </div>
+            <h1 class="hero-title">
+              Bay thỏa thích - <span class="text-highlight">Khám phá</span> thế giới
+            </h1>
+            <p class="hero-desc">
+              Tận hưởng hành trình bay an toàn, tiết kiệm và ngập tràn niềm vui cùng Vietjet. Kết nối hàng trăm điểm đến hấp dẫn trong nước và quốc tế với giá vé cực kỳ ưu đãi.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#dat-ve" class="btn btn-vj-primary">
+                <i class="bi bi-send-fill"></i> Đặt vé ngay
+              </a>
+              <a href="#chuyen-bay" class="btn btn-vj-outline">
+                <i class="bi bi-compass"></i> Xem chặng bay hot
+              </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="hero-trust-badges">
+              <div class="trust-item">
+                <i class="bi bi-shield-check"></i>
+                <span>An toàn tuyệt đối</span>
+              </div>
+              <div class="trust-item">
+                <i class="bi bi-tag-fill"></i>
+                <span>Giá vé cạnh tranh</span>
+              </div>
+              <div class="trust-item">
+                <i class="bi bi-clock-history"></i>
+                <span>Đúng giờ & tin cậy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Vietjet Airplane Graphic -->
+          <div class="col-lg-6">
+            <div class="hero-image-wrapper">
+              <div class="hero-plane-card">
+                <img src="images/vietjet-may-bay.jpg" alt="Máy bay Vietjet Air" class="img-fluid">
+              </div>
+
+              <!-- Floating Info Card (Top Left) -->
+              <div class="floating-badge badge-top">
+                <i class="bi bi-airplane-engines-fill"></i>
+                <div>
+                  <div class="fw-bold">Đội bay hiện đại</div>
+                  <small class="text-muted">Airbus A321 / A330</small>
+                </div>
+              </div>
+
+              <!-- Floating Info Card (Bottom Right) -->
+              <div class="floating-badge badge-bottom">
+                <i class="bi bi-gift-fill"></i>
+                <div>
+                  <div class="fw-bold">Ưu đãi vé 0 đồng</div>
+                  <small class="text-muted">Khung giờ vàng 12h - 14h</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flight Search / Booking Box Section -->
+    <section class="booking-section" id="dat-ve">
+      <div class="container">
+        <div class="booking-card">
+          <!-- Trip Type Tabs -->
+          <div class="trip-type-tabs">
+            <button type="button" class="trip-tab-btn active" data-trip="round-trip">
+              <i class="bi bi-arrow-left-right"></i> Khứ hồi
+            </button>
+            <button type="button" class="trip-tab-btn" data-trip="one-way">
+              <i class="bi bi-arrow-right"></i> Một chiều
+            </button>
+          </div>
+
+          <!-- Search Form -->
+          <form id="flightSearchForm">
+            <div class="row g-3 align-items-center">
+              <!-- Điểm đi -->
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="booking-input-group">
+                  <label for="fromCity"><i class="bi bi-geo-alt-fill text-danger"></i> Điểm đi</label>
+                  <select class="form-select" id="fromCity" required>
+                    <option value="SGN" selected>TP. Hồ Chí Minh (SGN)</option>
+                    <option value="HAN">Hà Nội (HAN)</option>
+                    <option value="DAD">Đà Nẵng (DAD)</option>
+                    <option value="PQC">Phú Quốc (PQC)</option>
+                    <option value="CXR">Nha Trang (CXR)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Swap Button (Visible desktop & mobile) -->
+              <div class="col-12 col-lg-auto d-flex justify-content-center p-0">
+                <button type="button" class="swap-locations-btn" id="swapCitiesBtn" title="Đổi điểm đi và điểm đến" aria-label="Hoán đổi điểm đi và đến">
+                  <i class="bi bi-arrow-left-right"></i>
+                </button>
+              </div>
+
+              <!-- Điểm đến -->
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="booking-input-group">
+                  <label for="toCity"><i class="bi bi-pin-map-fill text-danger"></i> Điểm đến</label>
+                  <select class="form-select" id="toCity" required>
+                    <option value="HAN" selected>Hà Nội (HAN)</option>
+                    <option value="SGN">TP. Hồ Chí Minh (SGN)</option>
+                    <option value="DAD">Đà Nẵng (DAD)</option>
+                    <option value="PQC">Phú Quốc (PQC)</option>
+                    <option value="CXR">Nha Trang (CXR)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Ngày đi -->
+              <div class="col-6 col-md-6 col-lg-2">
+                <div class="booking-input-group">
+                  <label for="departDate"><i class="bi bi-calendar-event text-danger"></i> Ngày đi</label>
+                  <input type="date" class="form-control" id="departDate" required>
+                </div>
+              </div>
+
+              <!-- Ngày về -->
+              <div class="col-6 col-md-6 col-lg-2" id="returnDateGroup">
+                <div class="booking-input-group">
+                  <label for="returnDate"><i class="bi bi-calendar-check text-danger"></i> Ngày về</label>
+                  <input type="date" class="form-control" id="returnDate">
+                </div>
+              </div>
+
+              <!-- Số hành khách & Nút Tìm chuyến bay -->
+              <div class="col-12 col-md-12 col-lg-12">
+                <div class="row g-3 align-items-center mt-1">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="booking-input-group">
+                      <label for="passengers"><i class="bi bi-people-fill text-danger"></i> Số hành khách</label>
+                      <select class="form-select" id="passengers">
+                        <option value="1 Hành khách" selected>1 Người lớn (từ 12 tuổi)</option>
+                        <option value="2 Hành khách">2 Người lớn</option>
+                        <option value="3 Hành khách">3 Người lớn</option>
+                        <option value="Gia đình (2 Người lớn, 1 Trẻ em)">Gia đình (2 Lớn + 1 Trẻ)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-8 d-flex justify-content-lg-end">
+                    <button type="submit" class="btn btn-vj-primary btn-search-flight">
+                      <i class="bi bi-search"></i> Tìm chuyến bay
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Weather & 5-Day Forecast Section (Open-Meteo & OpenWeatherMap Backend Integration) -->
+    <section class="weather-section" id="thoi-tiet">
+      <div class="container">
+        <div class="section-header mb-4">
+          <span class="section-subtitle"><i class="bi bi-cloud-sun-fill me-1"></i> Tiện ích hành trình</span>
+          <h2 class="section-title">Tra cứu thời tiết & Dự báo 5 ngày tới</h2>
+          <p class="section-desc">
+            Kiểm tra nhanh thời tiết hiện tại (<strong>Open-Meteo API</strong>) và dự báo 5 ngày tới (<strong>OpenWeatherMap API</strong>) theo tên thành phố để lên kế hoạch hoàn hảo cho chuyến bay của bạn.
+          </p>
+        </div>
+
+        <div class="weather-widget-card">
+          <div class="row g-4 align-items-stretch">
+            <!-- Left Column: City Search Input & Quick Destinations -->
+            <div class="col-lg-5 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="weather-panel-title">
+                  <i class="bi bi-geo-alt-fill text-danger"></i> Nhập tên thành phố
+                </h3>
+                <p class="text-muted small mb-3">
+                  Hỗ trợ tra cứu mọi thành phố tại Việt Nam và quốc tế (ví dụ: Hà Nội, Đà Nẵng, Hồ Chí Minh, Phú Quốc, Tokyo, Seoul...).
+                </p>
+
+                <form id="weatherSearchForm" class="weather-search-form mb-3">
+                  <div class="weather-input-wrapper">
+                    <i class="bi bi-search weather-search-icon"></i>
+                    <input
+                      type="text"
+                      id="weatherCityInput"
+                      class="form-control weather-city-input"
+                      placeholder="Nhập tên thành phố (VD: Hà Nội, Đà Nẵng...)"
+                      value="Hà Nội"
+                      autocomplete="off"
+                      required
+                    >
+                    <button type="submit" class="btn btn-vj-primary weather-submit-btn" id="weatherSubmitBtn">
+                      <span>Xem thời tiết</span>
+                    </button>
+                  </div>
+                </form>
+
+                <!-- Quick Select Cities -->
+                <div class="weather-quick-cities">
+                  <span class="quick-label"><i class="bi bi-compass me-1"></i> Điểm đến phổ biến:</span>
+                  <div class="d-flex flex-wrap gap-2 mt-2">
+                    <button type="button" class="weather-chip active" data-city="Hà Nội">Hà Nội</button>
+                    <button type="button" class="weather-chip" data-city="Hồ Chí Minh">TP. Hồ Chí Minh</button>
+                    <button type="button" class="weather-chip" data-city="Đà Nẵng">Đà Nẵng</button>
+                    <button type="button" class="weather-chip" data-city="Phú Quốc">Phú Quốc</button>
+                    <button type="button" class="weather-chip" data-city="Nha Trang">Nha Trang</button>
+                    <button type="button" class="weather-chip" data-city="Đà Lạt">Đà Lạt</button>
+                    <button type="button" class="weather-chip" data-city="Tokyo">Tokyo</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="weather-api-badge mt-4 pt-3 border-top flex-wrap">
+                <i class="bi bi-hdd-network text-danger"></i>
+                <span>Backend API: <code>/api/weather</code> (Open-Meteo) &amp; <code>/api/forecast</code> (OpenWeatherMap)</span>
+              </div>
+            </div>
+
+            <!-- Right Column: Weather Result Display Area -->
+            <div class="col-lg-7">
+              <div class="weather-result-box" id="weatherResultBox">
+                <!-- 1. Loading State -->
+                <div id="weatherLoadingState" class="weather-state-container text-center d-none">
+                  <div class="spinner-border text-danger mb-3" role="status" style="width: 2.8rem; height: 2.8rem;">
+                    <span class="visually-hidden">Đang tải...</span>
+                  </div>
+                  <h5 class="fw-bold mb-1">Đang lấy dữ liệu thời tiết...</h5>
+                  <p class="text-muted small mb-0" id="weatherLoadingSubtext">
+                    Đang kết nối tới máy chủ thời tiết qua Backend cho thành phố <strong id="weatherLoadingCity">Hà Nội</strong>
+                  </p>
+                  <div id="weatherSlowWarning" class="weather-slow-alert d-none mt-3">
+                    <i class="bi bi-hourglass-split me-1"></i>
+                    <span>API đang phản hồi hơi chậm, vui lòng đợi thêm giây lát...</span>
+                  </div>
+                </div>
+
+                <!-- 2. Error State (City Not Found / Slow API Timeout / Network Error) -->
+                <div id="weatherErrorState" class="weather-state-container text-center d-none">
+                  <div class="weather-error-icon mb-2">
+                    <i class="bi bi-exclamation-triangle-fill" id="weatherErrorIcon"></i>
+                  </div>
+                  <h5 class="fw-bold text-danger mb-2" id="weatherErrorTitle">Không tìm thấy thành phố</h5>
+                  <p class="text-muted small mb-3 px-md-4" id="weatherErrorMessage">
+                    Không tìm thấy dữ liệu thời tiết cho thành phố bạn vừa nhập. Vui lòng kiểm tra lại tên thành phố.
+                  </p>
+                  <div class="d-flex justify-content-center gap-2 flex-wrap">
+                    <button type="button" class="btn btn-sm btn-vj-primary" id="weatherRetryBtn">
+                      <i class="bi bi-arrow-clockwise"></i> Thử lại
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3" id="weatherDefaultCityBtn">
+                      Xem thời tiết Hà Nội
+                    </button>
+                  </div>
+                </div>
+
+                <!-- 3. Success Weather Data State -->
+                <div id="weatherSuccessState" class="weather-success-content">
+                  <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+                    <div>
+                      <span class="weather-live-pill">
+                        <span class="live-dot"></span> Thời tiết hiện tại
+                      </span>
+                      <h3 class="weather-city-heading mt-2 mb-0" id="weatherDisplayCity">Hà Nội</h3>
+                      <p class="weather-country-sub mb-0" id="weatherDisplayCountry">Việt Nam</p>
+                    </div>
+                    <div class="text-end">
+                      <small class="text-muted d-block" id="weatherUpdatedLabel">Cập nhật vừa xong</small>
+                    </div>
+                  </div>
+
+                  <div class="weather-main-highlight">
+                    <div class="weather-icon-circle">
+                      <i class="bi bi-cloud-sun-fill" id="weatherDisplayIcon"></i>
+                    </div>
+                    <div class="weather-temp-block">
+                      <div class="weather-temp-value" id="weatherDisplayTemp">--°C</div>
+                      <div class="weather-desc-text" id="weatherDisplayDesc">Đang tải mô tả thời tiết...</div>
+                    </div>
+                  </div>
+
+                  <!-- Weather Details Grid -->
+                  <div class="row g-2 mt-3">
+                    <div class="col-4">
+                      <div class="weather-metric-item">
+                        <i class="bi bi-thermometer-half text-danger"></i>
+                        <div>
+                          <small class="text-muted d-block">Cảm giác như</small>
+                          <strong id="weatherDisplayFeelsLike">--°C</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="weather-metric-item">
+                        <i class="bi bi-droplet-half text-primary"></i>
+                        <div>
+                          <small class="text-muted d-block">Độ ẩm</small>
+                          <strong id="weatherDisplayHumidity">--%</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="weather-metric-item">
+                        <i class="bi bi-wind text-info"></i>
+                        <div>
+                          <small class="text-muted d-block">Tốc độ gió</small>
+                          <strong id="weatherDisplayWind">-- km/h</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Flight Travel Tip -->
+                  <div class="weather-flight-tip mt-3">
+                    <i class="bi bi-airplane-engines-fill text-danger"></i>
+                    <span id="weatherDisplayFlightNote">Thời tiết thuận lợi cho hành trình bay của bạn.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5-Day Forecast Block (OpenWeatherMap API) -->
+          <div class="forecast-5day-wrapper mt-4 pt-4 border-top" id="forecast5DayWrapper">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-calendar-range-fill text-danger fs-5"></i>
+                <h4 class="forecast-section-title mb-0">
+                  Dự báo thời tiết 5 ngày tới tại <span class="text-danger" id="forecastCityTitle">Hà Nội</span>
+                </h4>
+              </div>
+              <span class="forecast-source-badge">
+                <i class="bi bi-cloud-check-fill me-1"></i> OpenWeatherMap API
+              </span>
+            </div>
+
+            <!-- Forecast Loading State -->
+            <div id="forecastLoadingState" class="text-center py-4 d-none">
+              <div class="spinner-border spinner-border-sm text-danger me-2" role="status"></div>
+              <span class="text-muted small">Đang tải dự báo 5 ngày tới từ OpenWeatherMap...</span>
+            </div>
+
+            <!-- Forecast Error State -->
+            <div id="forecastErrorState" class="forecast-error-alert d-none">
+              <i class="bi bi-exclamation-circle-fill text-danger me-2"></i>
+              <span id="forecastErrorMessage">Không thể tải dự báo 5 ngày cho thành phố này.</span>
+            </div>
+
+            <!-- 5-Day Cards Container -->
+            <div class="forecast-days-grid" id="forecastDaysContainer">
+              <!-- Rendered dynamically by script.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Flights Section -->
+    <section class="flights-section" id="chuyen-bay">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">Hành trình hấp dẫn</span>
+          <h2 class="section-title">Các chuyến bay phổ biến</h2>
+          <p class="section-desc">
+            Khám phá các chặng bay được yêu thích nhất với mức giá siêu ưu đãi dành riêng cho bạn hôm nay.
+          </p>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="flight-filter-chips">
+          <button class="filter-chip active" data-filter="all">Tất cả chuyến bay</button>
+          <button class="filter-chip" data-filter="from-sgn">Từ TP. Hồ Chí Minh</button>
+          <button class="filter-chip" data-filter="from-han">Từ Hà Nội</button>
+          <button class="filter-chip" data-filter="under-2m">Giá dưới 2.000.000 VND</button>
+        </div>
+
+        <!-- Search Status Alert (hidden initially) -->
+        <div class="search-alert d-none" id="searchAlert">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-search text-danger fs-5"></i>
+            <span id="searchAlertText">Kết quả tìm kiếm</span>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary" id="resetSearchBtn">
+            <i class="bi bi-x-circle"></i> Đặt lại bộ lọc
+          </button>
+        </div>
+
+        <!-- Flight Cards Dynamic Container -->
+        <div class="row g-4" id="flightCardsContainer">
+          <!-- Cards rendered dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section class="promo-section" id="khuyen-mai">
+      <div class="container">
+        <div class="promo-banner">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <span class="promo-tag">Khuyến mãi cực hot</span>
+              <h3 class="promo-title">Săn vé 0 đồng – Bay khắp Việt Nam</h3>
+              <p class="promo-desc">
+                Cơ hội sở hữu hàng triệu vé máy bay với mức giá khởi điểm 0đ trong khung giờ vàng 12h:00 – 14h:00 mỗi ngày. Đặt vé ngay hôm nay để nhận thêm nhiều ưu đãi hành lý và suất ăn trên máy bay!
+              </p>
+              <a href="#dat-ve" class="btn btn-light fw-bold text-danger px-4 py-2 rounded-pill shadow-sm">
+                <i class="bi bi-lightning-charge-fill text-warning"></i> Săn vé ngay
+              </a>
+            </div>
+            <div class="col-lg-5 text-center mt-4 mt-lg-0">
+              <img src="images/vietjet-tiep-viet-1.jpg" width="100%"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Benefits Section -->
+    <section class="features-section" id="uu-diem">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">Tại sao chọn chúng tôi</span>
+          <h2 class="section-title">Trải nghiệm bay hoàn hảo</h2>
+          <p class="section-desc">
+            Vietjet không ngừng nỗ lực đem lại cho quý khách dịch vụ hàng không tiện nghi, hiện đại với chi phí tối ưu nhất.
+          </p>
+        </div>
+
+        <!-- 4 Key Benefits Cards -->
+        <div class="row g-4">
+          <!-- Feature 1: Nhiều điểm đến -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-globe-asia-australia"></i>
+              </div>
+              <h3 class="feature-title">Nhiều điểm đến</h3>
+              <p class="feature-text">
+                Mạng lưới đường bay phủ rộng khắp các tỉnh thành Việt Nam và kết nối nhanh chóng tới các điểm đến quốc tế hàng đầu.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2: Giá vé hấp dẫn -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-wallet2"></i>
+              </div>
+              <h3 class="feature-title">Giá vé hấp dẫn</h3>
+              <p class="feature-text">
+                Chính sách giá vé linh hoạt, tiết kiệm cùng các chương trình ưu đãi vé 0 đồng và khuyến mãi định kỳ quanh năm.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3: Đặt vé nhanh chóng -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <h3 class="feature-title">Đặt vé nhanh chóng</h3>
+              <p class="feature-text">
+                Giao diện đặt vé thân thiện, thủ tục tìm kiếm và thanh toán chỉ mất chưa đầy 3 phút giúp bạn tiết kiệm tối đa thời gian.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 4: Hỗ trợ trên mọi thiết bị -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h3 class="feature-title">Hỗ trợ mọi thiết bị</h3>
+              <p class="feature-text">
+                Thiết kế tương thích mượt mà trên cả máy tính để bàn, laptop, máy tính bảng và điện thoại di động thông minh.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="vj-footer" id="lien-he">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <img src="images/vietjet-logo.jpg" alt="Vietjet Air" class="footer-logo">
+          <p class="footer-brand-desc">
+            Vietjet luôn tiên phong mang lại cơ hội đi lại bằng máy bay với chi phí tiết kiệm, linh hoạt cho tất cả mọi người cùng đội tàu bay mới, tiếp viên thân thiện và những dịch vụ tiện ích trên từng chuyến bay.
+          </p>
+          <div class="d-flex gap-3 text-white fs-5">
+            <a href="#trang-chu" class="text-secondary" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#trang-chu" class="text-secondary" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+            <a href="#trang-chu" class="text-secondary" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#trang-chu" class="text-secondary" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading">Khám phá</h4>
+          <ul class="footer-links">
+            <li><a href="#trang-chu"><i class="bi bi-chevron-right"></i> Trang chủ</a></li>
+            <li><a href="#chuyen-bay"><i class="bi bi-chevron-right"></i> Chuyến bay</a></li>
+            <li><a href="#khuyen-mai"><i class="bi bi-chevron-right"></i> Khuyến mãi</a></li>
+            <li><a href="#uu-diem"><i class="bi bi-chevron-right"></i> Ưu điểm</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Terms Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Chính sách & Quy định</h4>
+          <ul class="footer-links">
+            <li><a href="#lien-he"><i class="bi bi-chevron-right"></i> Điều khoản sử dụng</a></li>
+            <li><a href="#lien-he"><i class="bi bi-chevron-right"></i> Chính sách bảo mật</a></li>
+            <li><a href="#lien-he"><i class="bi bi-chevron-right"></i> Quy định hành lý</a></li>
+            <li><a href="#lien-he"><i class="bi bi-chevron-right"></i> Hướng dẫn đặt vé trực tuyến</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Thông tin liên hệ</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>302/3 Phố Kim Mã, Ba Đình, Hà Nội & Tân Bình, TP.HCM</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>Hotline: 1900 1886 (+84 28 3526 68 68)</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>Email: hotro.demo@vietjetair.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Hỗ trợ khách hàng: 24/7 hàng ngày</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="footer-bottom">
+        <p class="mb-1">
+          © 2026 Vietjet Demo Landing Page. All rights reserved.
+        </p>
+        <small class="text-secondary">
+          Bản quyền giao diện thuộc về dự án Demo Mockup Landing Page. Thương hiệu Vietjet và Logo thuộc quyền sở hữu của Vietjet Aviation Joint Stock Company.
+        </small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal (Bootstrap Modal for Demo Booking) -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">
+            <i class="bi bi-ticket-perforated-fill"></i> Thông tin đặt vé máy bay
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Flight Summary Card -->
+          <div class="modal-ticket-summary">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge bg-danger px-2 py-1" id="modalFlightCode">VJ128</span>
+              <span class="text-muted small" id="modalFlightType">Một chiều</span>
+            </div>
+            <h6 class="fw-bold mb-2" id="modalRoute">TP. Hồ Chí Minh (SGN) ➔ Hà Nội (HAN)</h6>
+            <div class="row g-2 text-muted small mb-2">
+              <div class="col-6">
+                <i class="bi bi-calendar3"></i> Ngày: <span class="fw-semibold text-dark" id="modalFlightDate">27/09/2026</span>
+              </div>
+              <div class="col-6 text-end">
+                <i class="bi bi-people"></i> <span class="fw-semibold text-dark" id="modalFlightPassengers">1 Hành khách</span>
+              </div>
+            </div>
+            <div class="border-top pt-2 mt-2 d-flex justify-content-between align-items-center">
+              <span class="small text-muted">Tổng cộng (đã bao gồm thuế phí):</span>
+              <span class="summary-price" id="modalFlightPrice">4.000.000 VND</span>
+            </div>
+          </div>
+
+          <!-- Demo Disclaimer -->
+          <div class="demo-disclaimer-alert">
+            <i class="bi bi-exclamation-triangle-fill fs-5 text-warning flex-shrink-0"></i>
+            <div>
+              <strong>Thông báo Mockup:</strong> Đây là giao diện đặt vé mẫu phục vụ kiểm thử frontend. Hệ thống sẽ không trừ tiền và không gửi vé thật.
+            </div>
+          </div>
+
+          <!-- Booking Form -->
+          <div id="bookingFormContainer">
+            <form id="modalConfirmForm">
+              <div class="mb-3">
+                <label for="passengerName" class="form-label small fw-bold">Họ và tên hành khách</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-person"></i></span>
+                  <input type="text" class="form-control" id="passengerName" placeholder="Ví dụ: NGUYEN VAN A" required>
+                </div>
+              </div>
+
+              <div class="row g-2 mb-3">
+                <div class="col-sm-6">
+                  <label for="passengerPhone" class="form-label small fw-bold">Số điện thoại</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                    <input type="tel" class="form-control" id="passengerPhone" placeholder="0912 345 678" required>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="passengerEmail" class="form-label small fw-bold">Email nhận vé</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" id="passengerEmail" placeholder="email@domain.com" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-grid gap-2 mt-4">
+                <button type="submit" class="btn btn-vj-primary">
+                  <i class="bi bi-check-circle-fill"></i> Xác nhận giữ chỗ demo
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Success Alert State -->
+          <div id="bookingSuccessAlert" class="text-center py-3 d-none">
+            <div class="mb-3 text-success">
+              <i class="bi bi-check-circle-fill" style="font-size: 3.5rem;"></i>
+            </div>
+            <h5 class="fw-bold text-success mb-2">Đặt chỗ mô phỏng thành công!</h5>
+            <p class="text-muted small mb-3">
+              Mã giữ chỗ demo của quý khách là: <strong class="text-danger fs-5 d-block mt-1" id="demoBookingCode">VJ849201</strong>
+            </p>
+            <p class="small text-muted mb-4">
+              Cảm ơn quý khách đã trải nghiệm giao diện mockup của chúng tôi. Chúc quý khách những chuyến bay tuyệt vời cùng Vietjet!
+            </p>
+            <button type="button" class="btn btn-secondary px-4 rounded-pill" data-bs-dismiss="modal">
+              Đóng cửa sổ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Vanilla JS -->
+  <script src="script.js"></script>
+</body>
+</html>

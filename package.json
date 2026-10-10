@@ -1,0 +1,12 @@
+{
+  "name": "vietjet-landing-weather",
+  "version": "1.0.0",
+  "description": "Vietjet Air Demo Landing Page with Open-Meteo Current Weather Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,1451 @@
+/* ==========================================================================
+   Vietjet Air Landing Page - Stylesheet
+   Theme: Modern, Clean, Minimalist, Responsive
+   ========================================================================== */
+
+:root {
+  --vj-red: #ee1d23;
+  --vj-red-dark: #cb1319;
+  --vj-red-light: #fff2f2;
+  --vj-red-hover: #dc181e;
+  --vj-yellow: #ffc20e;
+  --vj-yellow-light: #fff9e6;
+  --vj-dark: #212529;
+  --vj-gray-dark: #333333;
+  --vj-gray: #666666;
+  --vj-gray-light: #f4f6f8;
+  --vj-gray-border: #e2e8f0;
+  --vj-white: #ffffff;
+  
+  --vj-radius-sm: 8px;
+  --vj-radius-md: 14px;
+  --vj-radius-lg: 20px;
+  --vj-radius-xl: 28px;
+  
+  --vj-shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+  --vj-shadow-md: 0 10px 28px rgba(0, 0, 0, 0.07);
+  --vj-shadow-lg: 0 18px 45px rgba(238, 29, 35, 0.12);
+  --vj-shadow-card: 0 6px 20px rgba(0, 0, 0, 0.06);
+  
+  --vj-transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base & Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--vj-dark);
+  background-color: var(--vj-gray-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--vj-transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Custom Buttons */
+.btn-vj-primary {
+  background-color: var(--vj-red);
+  color: var(--vj-white);
+  border: 1px solid var(--vj-red);
+  font-weight: 600;
+  padding: 0.65rem 1.6rem;
+  border-radius: 50px;
+  transition: var(--vj-transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 14px rgba(238, 29, 35, 0.28);
+}
+
+.btn-vj-primary:hover,
+.btn-vj-primary:focus {
+  background-color: var(--vj-red-dark);
+  border-color: var(--vj-red-dark);
+  color: var(--vj-white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(238, 29, 35, 0.38);
+}
+
+.btn-vj-primary:active {
+  transform: translateY(0);
+}
+
+.btn-vj-outline {
+  background-color: transparent;
+  color: var(--vj-red);
+  border: 1.5px solid var(--vj-red);
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  transition: var(--vj-transition);
+}
+
+.btn-vj-outline:hover {
+  background-color: var(--vj-red);
+  color: var(--vj-white);
+  box-shadow: 0 4px 14px rgba(238, 29, 35, 0.25);
+}
+
+/* Demo Notice Banner */
+.demo-top-bar {
+  background-color: #212529;
+  color: #e0e0e0;
+  font-size: 0.8rem;
+  padding: 0.35rem 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.demo-top-bar strong {
+  color: var(--vj-yellow);
+}
+
+/* Header & Navbar */
+.vj-navbar {
+  background-color: var(--vj-white);
+  box-shadow: var(--vj-shadow-sm);
+  padding: 0.75rem 0;
+  transition: var(--vj-transition);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.vj-navbar.scrolled {
+  box-shadow: var(--vj-shadow-md);
+  padding: 0.5rem 0;
+}
+
+.navbar-brand .brand-logo {
+  height: 44px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  transition: var(--vj-transition);
+}
+
+.navbar-brand:hover .brand-logo {
+  transform: scale(1.03);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--vj-gray-dark) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px;
+  transition: var(--vj-transition);
+  font-size: 0.95rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--vj-red) !important;
+  background-color: var(--vj-red-light);
+}
+
+.navbar-toggler {
+  border: 1px solid var(--vj-gray-border);
+  padding: 0.4rem 0.65rem;
+  border-radius: 8px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(238, 29, 35, 0.15);
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfc 50%, var(--vj-gray-light) 100%);
+  padding: 3.5rem 0 2rem;
+  overflow: hidden;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--vj-red-light);
+  color: var(--vj-red);
+  padding: 0.35rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(238, 29, 35, 0.15);
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--vj-dark);
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-title .text-highlight {
+  color: var(--vj-red);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  color: var(--vj-gray);
+  margin-bottom: 2rem;
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-trust-badges {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--vj-gray-border);
+  padding-top: 1.5rem;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--vj-gray-dark);
+  font-weight: 500;
+}
+
+.trust-item i {
+  color: var(--vj-red);
+  font-size: 1.1rem;
+}
+
+/* Hero Airplane Graphic */
+.hero-image-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-plane-card {
+  position: relative;
+  border-radius: var(--vj-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--vj-shadow-md);
+  border: 4px solid var(--vj-white);
+  background-color: var(--vj-white);
+  transition: var(--vj-transition);
+}
+
+.hero-plane-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--vj-shadow-lg);
+}
+
+.hero-plane-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Floating overlay cards */
+.floating-badge {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 0.65rem 1.1rem;
+  border-radius: 50px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vj-dark);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  animation: floatUpDown 4s ease-in-out infinite alternate;
+}
+
+.floating-badge.badge-top {
+  top: 20px;
+  left: -15px;
+}
+
+.floating-badge.badge-bottom {
+  bottom: 25px;
+  right: -10px;
+  animation-delay: -2s;
+}
+
+.floating-badge i {
+  background-color: var(--vj-red-light);
+  color: var(--vj-red);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+/* Booking Search Box */
+.booking-section {
+  position: relative;
+  z-index: 10;
+  margin-top: -1.5rem;
+  margin-bottom: 4rem;
+}
+
+.booking-card {
+  background: var(--vj-white);
+  border-radius: var(--vj-radius-lg);
+  box-shadow: var(--vj-shadow-md);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1.75rem;
+  position: relative;
+}
+
+.trip-type-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--vj-gray-border);
+  padding-bottom: 0.75rem;
+}
+
+.trip-tab-btn {
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--vj-gray);
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--vj-transition);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.trip-tab-btn.active {
+  background-color: var(--vj-red-light);
+  color: var(--vj-red);
+}
+
+.booking-input-group {
+  position: relative;
+  background-color: var(--vj-gray-light);
+  border: 1px solid var(--vj-gray-border);
+  border-radius: var(--vj-radius-md);
+  padding: 0.6rem 0.9rem;
+  transition: var(--vj-transition);
+  height: 100%;
+}
+
+.booking-input-group:focus-within {
+  border-color: var(--vj-red);
+  background-color: var(--vj-white);
+  box-shadow: 0 0 0 3px rgba(238, 29, 35, 0.12);
+}
+
+.booking-input-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--vj-gray);
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.booking-input-group .form-control,
+.booking-input-group .form-select {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--vj-dark);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.booking-input-group .form-control:focus,
+.booking-input-group .form-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.booking-input-group.disabled {
+  opacity: 0.55;
+  background-color: #f1f3f5;
+  cursor: not-allowed;
+}
+
+.booking-input-group.disabled * {
+  cursor: not-allowed;
+}
+
+.swap-locations-btn {
+  background: var(--vj-white);
+  border: 1px solid var(--vj-gray-border);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--vj-red);
+  cursor: pointer;
+  box-shadow: var(--vj-shadow-sm);
+  transition: var(--vj-transition);
+  margin: 0 auto;
+}
+
+.swap-locations-btn:hover {
+  background-color: var(--vj-red);
+  color: var(--vj-white);
+  border-color: var(--vj-red);
+  transform: rotate(180deg);
+}
+
+.btn-search-flight {
+  width: 100%;
+  height: 100%;
+  min-height: 58px;
+  border-radius: var(--vj-radius-md);
+  font-size: 1.05rem;
+}
+
+/* Flight Section */
+.flights-section {
+  padding: 4rem 0;
+  background-color: var(--vj-gray-light);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 3rem;
+}
+
+.section-subtitle {
+  color: var(--vj-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.section-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--vj-dark);
+  margin-bottom: 0.75rem;
+}
+
+.section-desc {
+  color: var(--vj-gray);
+  font-size: 0.98rem;
+}
+
+/* Filter chips */
+.flight-filter-chips {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-chip {
+  background-color: var(--vj-white);
+  border: 1px solid var(--vj-gray-border);
+  padding: 0.45rem 1.1rem;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--vj-gray-dark);
+  cursor: pointer;
+  transition: var(--vj-transition);
+}
+
+.filter-chip:hover {
+  border-color: var(--vj-red);
+  color: var(--vj-red);
+}
+
+.filter-chip.active {
+  background-color: var(--vj-red);
+  border-color: var(--vj-red);
+  color: var(--vj-white);
+  box-shadow: 0 4px 12px rgba(238, 29, 35, 0.25);
+}
+
+/* Search Status Alert */
+.search-alert {
+  background-color: var(--vj-white);
+  border-left: 4px solid var(--vj-red);
+  border-radius: var(--vj-radius-sm);
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--vj-shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Flight Ticket Card */
+.flight-card {
+  background: var(--vj-white);
+  border-radius: var(--vj-radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: var(--vj-shadow-card);
+  padding: 1.5rem;
+  transition: var(--vj-transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.flight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vj-red) 0%, var(--vj-yellow) 100%);
+  opacity: 0;
+  transition: var(--vj-transition);
+}
+
+.flight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--vj-shadow-md);
+  border-color: rgba(238, 29, 35, 0.2);
+}
+
+.flight-card:hover::before {
+  opacity: 1;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px dashed var(--vj-gray-border);
+}
+
+.flight-code {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--vj-red);
+  background-color: var(--vj-red-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.flight-type-badge {
+  font-size: 0.8rem;
+  color: var(--vj-gray);
+  font-weight: 500;
+}
+
+.flight-route-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.route-point {
+  flex: 1;
+}
+
+.route-point.destination {
+  text-align: right;
+}
+
+.city-code {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--vj-dark);
+  line-height: 1.1;
+}
+
+.city-name {
+  font-size: 0.85rem;
+  color: var(--vj-gray);
+  font-weight: 500;
+}
+
+.flight-connector {
+  flex: 1;
+  padding: 0 0.75rem;
+  text-align: center;
+  position: relative;
+}
+
+.flight-duration {
+  font-size: 0.75rem;
+  color: var(--vj-gray);
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.flight-path-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flight-path-line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--vj-gray-border);
+  z-index: 1;
+}
+
+.flight-path-line i {
+  position: relative;
+  z-index: 2;
+  background-color: var(--vj-white);
+  padding: 0 0.35rem;
+  color: var(--vj-red);
+  font-size: 1rem;
+}
+
+.flight-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--vj-gray-border);
+}
+
+.price-label {
+  font-size: 0.78rem;
+  color: var(--vj-gray);
+  display: block;
+}
+
+.price-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--vj-red);
+  line-height: 1.2;
+}
+
+.btn-book-ticket {
+  font-size: 0.9rem;
+  padding: 0.45rem 1.25rem;
+}
+
+/* Features / Benefits Section */
+.features-section {
+  padding: 4.5rem 0;
+  background-color: var(--vj-white);
+}
+
+.feature-box {
+  background-color: var(--vj-gray-light);
+  border-radius: var(--vj-radius-md);
+  padding: 2.2rem 1.75rem;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: var(--vj-transition);
+  text-align: center;
+}
+
+.feature-box:hover {
+  background-color: var(--vj-white);
+  transform: translateY(-6px);
+  box-shadow: var(--vj-shadow-md);
+  border-color: rgba(238, 29, 35, 0.15);
+}
+
+.feature-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--vj-white);
+  box-shadow: var(--vj-shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  color: var(--vj-red);
+  font-size: 1.6rem;
+  transition: var(--vj-transition);
+}
+
+.feature-box:hover .feature-icon-wrapper {
+  background-color: var(--vj-red);
+  color: var(--vj-white);
+  transform: scale(1.1);
+}
+
+.feature-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--vj-dark);
+  margin-bottom: 0.75rem;
+}
+
+.feature-text {
+  font-size: 0.9rem;
+  color: var(--vj-gray);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Promotions Banner Section */
+.promo-section {
+  padding: 2rem 0 4rem;
+  background-color: var(--vj-white);
+}
+
+.promo-banner {
+  background: linear-gradient(135deg, var(--vj-red) 0%, #b80d12 100%);
+  border-radius: var(--vj-radius-lg);
+  padding: 2.5rem;
+  color: var(--vj-white);
+  box-shadow: var(--vj-shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-banner::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(255, 194, 14, 0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.promo-tag {
+  background-color: var(--vj-yellow);
+  color: #8b5a00;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.promo-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.promo-desc {
+  font-size: 0.98rem;
+  opacity: 0.95;
+  max-width: 580px;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+.vj-footer {
+  background-color: #1a1a1a;
+  color: #adb5bd;
+  padding: 4.5rem 0 1.5rem;
+  border-top: 4px solid var(--vj-red);
+}
+
+.footer-logo {
+  height: 48px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.footer-brand-desc {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: #8e959d;
+  margin-bottom: 1.5rem;
+}
+
+.footer-heading {
+  color: var(--vj-white);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 28px;
+  height: 2px;
+  background-color: var(--vj-red);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-links a {
+  color: #9ea6af;
+  font-size: 0.88rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-links a:hover {
+  color: var(--vj-yellow);
+  transform: translateX(4px);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.88rem;
+}
+
+.footer-contact-item i {
+  color: var(--vj-yellow);
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.5rem;
+  margin-top: 3.5rem;
+  font-size: 0.82rem;
+  text-align: center;
+  color: #727b84;
+}
+
+.footer-bottom strong {
+  color: #ffffff;
+}
+
+/* Modal Customization */
+.modal-content {
+  border-radius: var(--vj-radius-lg);
+  border: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: var(--vj-red-light);
+  border-bottom: 1px solid rgba(238, 29, 35, 0.1);
+  padding: 1.25rem 1.5rem;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: var(--vj-red);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-ticket-summary {
+  background: var(--vj-gray-light);
+  border-radius: var(--vj-radius-md);
+  padding: 1.2rem;
+  border: 1px solid var(--vj-gray-border);
+  margin-bottom: 1.5rem;
+}
+
+.modal-ticket-summary .summary-price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--vj-red);
+}
+
+.demo-disclaimer-alert {
+  background-color: #fff9e6;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  border-radius: var(--vj-radius-sm);
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+/* Toast styling */
+.toast-container {
+  z-index: 1090;
+}
+
+.custom-toast {
+  border-radius: var(--vj-radius-md);
+  box-shadow: var(--vj-shadow-md);
+  border-left: 5px solid var(--vj-red);
+}
+
+/* ==========================================================================
+   Weather Lookup Section (Open-Meteo Integration)
+   ========================================================================== */
+.weather-section {
+  padding: 1rem 0 3.5rem;
+  background-color: var(--vj-gray-light);
+}
+
+.weather-widget-card {
+  background: var(--vj-white);
+  border-radius: var(--vj-radius-lg);
+  box-shadow: var(--vj-shadow-md);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.weather-panel-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--vj-dark);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.weather-input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--vj-gray-light);
+  border: 1.5px solid var(--vj-gray-border);
+  border-radius: 50px;
+  padding: 0.3rem 0.35rem 0.3rem 1.1rem;
+  transition: var(--vj-transition);
+}
+
+.weather-input-wrapper:focus-within {
+  background-color: var(--vj-white);
+  border-color: var(--vj-red);
+  box-shadow: 0 0 0 3px rgba(238, 29, 35, 0.12);
+}
+
+.weather-search-icon {
+  color: var(--vj-gray);
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.weather-city-input {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--vj-dark);
+  padding: 0.4rem 0.5rem;
+}
+
+.weather-submit-btn {
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.weather-quick-cities .quick-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--vj-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.weather-chip {
+  background-color: var(--vj-gray-light);
+  border: 1px solid var(--vj-gray-border);
+  color: var(--vj-gray-dark);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--vj-transition);
+}
+
+.weather-chip:hover {
+  border-color: var(--vj-red);
+  color: var(--vj-red);
+  background-color: var(--vj-red-light);
+}
+
+.weather-chip.active {
+  background-color: var(--vj-red);
+  border-color: var(--vj-red);
+  color: var(--vj-white);
+}
+
+.weather-api-badge {
+  font-size: 0.82rem;
+  color: var(--vj-gray);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weather-result-box {
+  background: linear-gradient(135deg, #fff7f7 0%, #ffffff 60%, #fffdf5 100%);
+  border: 1px solid rgba(238, 29, 35, 0.14);
+  border-radius: var(--vj-radius-md);
+  padding: 1.75rem;
+  height: 100%;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.weather-state-container {
+  padding: 1.5rem 0.5rem;
+}
+
+.weather-slow-alert {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--vj-yellow-light);
+  border: 1px solid #ffeeba;
+  color: #856404;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem;
+  border-radius: 50px;
+}
+
+.weather-error-icon {
+  font-size: 2.6rem;
+  color: var(--vj-red);
+  line-height: 1;
+}
+
+.weather-live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--vj-red-light);
+  color: var(--vj-red);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+}
+
+.weather-live-pill .live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--vj-red);
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.25); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+.weather-city-heading {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--vj-dark);
+}
+
+.weather-country-sub {
+  font-size: 0.88rem;
+  color: var(--vj-gray);
+  font-weight: 500;
+}
+
+.weather-main-highlight {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: var(--vj-white);
+  border: 1px solid var(--vj-gray-border);
+  border-radius: var(--vj-radius-md);
+  padding: 1.1rem 1.35rem;
+  box-shadow: var(--vj-shadow-sm);
+}
+
+.weather-icon-circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--vj-red-light) 0%, var(--vj-yellow-light) 100%);
+  color: var(--vj-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.weather-temp-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--vj-red);
+  line-height: 1.05;
+}
+
+.weather-desc-text {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--vj-dark);
+  margin-top: 0.2rem;
+}
+
+.weather-metric-item {
+  background-color: var(--vj-white);
+  border: 1px solid var(--vj-gray-border);
+  border-radius: var(--vj-radius-sm);
+  padding: 0.65rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 100%;
+}
+
+.weather-metric-item i {
+  font-size: 1.25rem;
+}
+
+.weather-metric-item small {
+  font-size: 0.72rem;
+}
+
+.weather-metric-item strong {
+  font-size: 0.9rem;
+  color: var(--vj-dark);
+}
+
+.weather-flight-tip {
+  background-color: var(--vj-yellow-light);
+  border: 1px solid rgba(255, 194, 14, 0.45);
+  border-radius: var(--vj-radius-sm);
+  padding: 0.6rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #664d03;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 5-Day Forecast Grid (OpenWeatherMap) */
+.forecast-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--vj-dark);
+}
+
+.forecast-source-badge {
+  background-color: var(--vj-gray-light);
+  border: 1px solid var(--vj-gray-border);
+  color: var(--vj-gray-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+}
+
+.forecast-error-alert {
+  background-color: var(--vj-red-light);
+  border: 1px solid rgba(238, 29, 35, 0.2);
+  color: var(--vj-red-dark);
+  border-radius: var(--vj-radius-sm);
+  padding: 0.75rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.forecast-days-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.85rem;
+}
+
+.forecast-day-card {
+  background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+  border: 1px solid var(--vj-gray-border);
+  border-radius: var(--vj-radius-md);
+  padding: 1rem 0.75rem;
+  text-align: center;
+  transition: var(--vj-transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast-day-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(238, 29, 35, 0.3);
+  box-shadow: var(--vj-shadow-sm);
+  background: var(--vj-white);
+}
+
+.forecast-day-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--vj-dark);
+}
+
+.forecast-day-date {
+  font-size: 0.78rem;
+  color: var(--vj-gray);
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.forecast-icon-wrap {
+  width: 58px;
+  height: 58px;
+  margin: 0.15rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--vj-red-light);
+  border-radius: 50%;
+}
+
+.forecast-owm-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+}
+
+.forecast-day-temp {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--vj-red);
+  line-height: 1.2;
+  margin-top: 0.35rem;
+}
+
+.forecast-day-range {
+  font-size: 0.75rem;
+  color: var(--vj-gray);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.forecast-day-desc {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--vj-gray-dark);
+  line-height: 1.3;
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+  .forecast-days-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero-section {
+    padding: 2.5rem 0 1.5rem;
+  }
+  
+  .hero-plane-card img {
+    height: 320px;
+  }
+  
+  .hero-image-wrapper {
+    margin-top: 2rem;
+  }
+  
+  .floating-badge.badge-top {
+    left: 10px;
+  }
+  
+  .floating-badge.badge-bottom {
+    right: 10px;
+  }
+  
+  .booking-section {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-desc {
+    font-size: 0.95rem;
+  }
+  
+  .hero-plane-card img {
+    height: 250px;
+  }
+  
+  .booking-card {
+    padding: 1.25rem;
+  }
+  
+  .booking-input-group {
+    margin-bottom: 0.75rem;
+  }
+  
+  .swap-locations-btn {
+    transform: rotate(90deg);
+    margin: 0.25rem auto 0.75rem;
+  }
+  
+  .swap-locations-btn:hover {
+    transform: rotate(270deg);
+  }
+  
+  .promo-banner {
+    padding: 1.75rem;
+  }
+  
+  .promo-title {
+    font-size: 1.4rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .weather-widget-card {
+    padding: 1.25rem;
+  }
+
+  .weather-result-box {
+    padding: 1.25rem;
+  }
+
+  .weather-temp-value {
+    font-size: 2rem;
+  }
+
+  .forecast-days-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .floating-badge {
+    display: none;
+  }
+  
+  .flight-route-info {
+    margin-bottom: 1rem;
+  }
+  
+  .city-code {
+    font-size: 1.2rem;
+  }
+  
+  .price-value {
+    font-size: 1.15rem;
+  }
+
+  .weather-input-wrapper {
+    flex-direction: column;
+    border-radius: var(--vj-radius-md);
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .weather-search-icon {
+    display: none;
+  }
+
+  .weather-city-input {
+    width: 100%;
+    text-align: center;
+  }
+
+  .weather-submit-btn {
+    width: 100%;
+  }
+}
+
